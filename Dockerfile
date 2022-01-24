@@ -21,7 +21,6 @@ COPY ./ /app/
 # directory ./build/_dist_  containing the built project.
 RUN npm run build
 
-# Optional nginx front to frontend JS
 # Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
 FROM nginx:1.21.4
 COPY --from=build-stage /app/nginx.conf /etc/nginx/conf.d/default.conf
