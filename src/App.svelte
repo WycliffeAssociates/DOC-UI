@@ -48,7 +48,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
 
-  let API_ROOT_URL = 'http://localhost:5005';
+  let API_ROOT_URL = 'http://irgdev.walink.org';
 
   let assemblyStrategies = [
     { id: 'book_language_order', label: 'Sort by book then by language' },
